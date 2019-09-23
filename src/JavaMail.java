@@ -30,7 +30,7 @@ public class JavaMail {
 		properties.put("mail.smtp.port", "587");
 		//account details username and passowrd
 		String myAccountEmail = "munshi.zeeshan77@gmail.com";
-		String myAccountPassword =  "Is567707*";
+		String myAccountPassword =  "Is567777*";
 		Session session = Session.getInstance(properties,new Authenticator() {
 			/*
 			 * Authentication for username and password
