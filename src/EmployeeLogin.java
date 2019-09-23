@@ -11,7 +11,7 @@ public class EmployeeLogin {
 		Connection conn = null;
 		ResultSet rs = null;
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "SUBHAM", "132512");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "BLACKHAT", "Is564577*");
 			Statement stmt = conn.createStatement();
 			rs = stmt.executeQuery("SELECT * FROM EmployeeLogin where Username = '"+employeeUsername+"' and pass_word ='"+employeePassword+"'");
 			return rs;
@@ -24,7 +24,7 @@ public class EmployeeLogin {
 		ResultSet rs = null;
 		
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "SUBHAM", "132512");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "BLACKHAT", "Is564577*");
 			Statement stmt = conn.createStatement();
 			int a = stmt.executeUpdate("INSERT INTO EmployeeDeatils  Values("+iDfirstLogin+","+workExperence+",'"+dOB+"','"+matrimonial+"','"+native1+"','"+address+"')");
 			boolean b = stmt.execute("UPDATE EmployeeLogin SET count = 0 where id = "+iDfirstLogin+"");
@@ -40,7 +40,7 @@ public class EmployeeLogin {
 		Connection conn = null;
 		ResultSet rs = null;
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "SUBHAM", "132512");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "BLACKHAT", "Is564577*");
 			Statement stmt = conn.createStatement();
 			rs = stmt.executeQuery("SELECT * FROM EmployeeLogin where Username = '"+employeeUsername+"' and pass_word ='"+employeePassword+"'");
 			return rs;
@@ -51,7 +51,7 @@ public class EmployeeLogin {
 		Connection conn = null;
 		ResultSet rs = null;
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "SUBHAM", "132512");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "BLACKHAT", "Is564577*");
 			Statement stmt = conn.createStatement();
 			rs = stmt.executeQuery("SELECT * FROM EmployeeLogin where Username = '"+employeeUsername+"' and pass_word ='"+employeePassword+"'");
 			return rs;
@@ -61,7 +61,7 @@ public class EmployeeLogin {
 		// TODO Auto-generated method stub
 		Connection conn = null;
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "SUBHAM", "132512");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "BLACKHAT", "Is564577*");
 			Statement stmt = conn.createStatement();
 			boolean a = stmt.execute("UPDATE EmployeeLogin SET pass_word = '"+newPassword+"' where id = "+iD1+"");
 			return a;
@@ -71,7 +71,7 @@ public class EmployeeLogin {
 		// TODO Auto-generated method stub
 		Connection conn = null;
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "SUBHAM", "132512");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "BLACKHAT", "Is564577*");
 			Statement stmt = conn.createStatement();
 			boolean a = stmt.execute("UPDATE EmployeeLogin SET email = '"+newEmail+"' where id = "+iD2+"");
 			return a;

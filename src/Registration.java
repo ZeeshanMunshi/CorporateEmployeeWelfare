@@ -12,7 +12,7 @@ public class Registration {
 		
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "SUBHAM", "132512");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "BLACKHAT", "Is564577*");
 			Statement stmt = conn.createStatement();
 			int a = stmt.executeUpdate("INSERT INTO EmployeeLogin Values("+empid+",'"+employeeRegisterUsername+"','"+email+"',"+phone+",'"+newpassword+"',1)");
 			return a;

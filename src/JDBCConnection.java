@@ -7,7 +7,7 @@ public class JDBCConnection {
 		Connection conn = null;
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "SUBHAM", "132512");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "BLACKHAT", "Is564577*");
 			if(conn != null) {
 				System.out.println("Connected to Databse");
 			}else {
