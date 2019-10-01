@@ -10,7 +10,7 @@ public class AdminLogin {
 		Connection conn = null;
 		ResultSet rs = null;
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "BLACKHAT", "Is564577*");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/xe", "BLACKHAT", "Is564577*");
 			Statement stmt = conn.createStatement();
 			rs = stmt.executeQuery("SELECT * FROM AdminLogin where Username = '"+adminUsername+"' and pass_word ='"+adminPassword+"'");
 			return rs;		
@@ -20,7 +20,7 @@ public class AdminLogin {
 		Connection conn = null;
 		ResultSet rs = null;
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "BLACKHAT", "Is564577*");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/xe", "BLACKHAT", "Is564577*");
 			Statement stmt = conn.createStatement();
 			rs = stmt.executeQuery("SELECT * FROM EmployeeLogin where id = "+adminEmployeeId+"");
 			return rs;
@@ -33,7 +33,7 @@ public class AdminLogin {
 		Connection conn = null;
 		ResultSet rs = null;
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "BLACKHAT", "Is564577*");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/xe", "BLACKHAT", "Is564577*");
 			Statement stmt = conn.createStatement();
 			rs = stmt.executeQuery("Select * from EmployeeDeatils where id = "+adminEmployeeId+"");
 			return rs;
@@ -42,9 +42,9 @@ public class AdminLogin {
 	public static void AdminDropMethod(int adminEmployeeDropId) throws ClassNotFoundException, SQLException {
 		// TODO Auto-generated method stub
 		Connection conn = null;
-		ResultSet rs = null;
+//		ResultSet rs = null;
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "BLACKHAT", "Is564577*");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/xe", "BLACKHAT", "Is564577*");
 			Statement stmt = conn.createStatement();
 			stmt.executeUpdate("DELETE FROM EmployeeDeatils where id = "+adminEmployeeDropId+"");
 			stmt.executeUpdate("DELETE FROM EmployeeLogin where id = "+adminEmployeeDropId+"");

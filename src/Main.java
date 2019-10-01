@@ -50,6 +50,7 @@ public class Main {
 							System.out.print("\nMatrimonial Status : " +rs2.getString(4));
 							System.out.print("\nNative Place : "+rs2.getString(5));
 							System.out.print("\nFull Address : "+rs2.getString(6));
+							break;
 						}
 						sc3.close();
 						break;
